@@ -53,7 +53,7 @@ class LatControl(object):
     self.lowSteerRatio = 6.0           # Set the lowest possible steering ratio allowed
     self.vsrWindowLow = 0.3            # Set the tire/car angle low-end used for VSR (vsrWindowLow - is same as lowSteerRatio)
     self.vsrWindowHigh = 0.75          # Set the tire/car angle high-end (vsrWindowHigh + is same as CP.steerRatio / interface.py)
-    self.manual_Steering_Offset = 0.0  # Set a steering wheel offset. (Should this be * steering ratio to get the steering wheel angle?)
+    self.manual_Steering_Offset = 1.4  # Set a steering wheel offset. (Should this be * steering ratio to get the steering wheel angle?)
     self.variableSteerRatio = 0.0      # Used to store the calculated steering ratio
     self.angle_Check = 0.0             # Used for desired tire/car angle
     self.vsrSlope = 0.0                # Used for slope intercept formula
